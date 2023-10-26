@@ -43,4 +43,10 @@ public:
 
     class InvalidMove {};
     class InvalidPlayer {};
+
+private:
+
+    static const int ROWS = 3;
+    static const int COLUMNS = 3;
+    std::array<Player,SPACES> board;
 };

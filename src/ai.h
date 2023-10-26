@@ -20,4 +20,11 @@ private:
 
     Player aiPlayer;
     Player opponent;
+
+    struct Node {
+        int score;
+        int move;
+    };
+
+    Node minimax(const TicTacToeBoard& board, bool maximize) const;
 };
